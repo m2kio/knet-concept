@@ -1,10 +1,18 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import ConfirmBtns from '../components/ConfirmBtns'
+import KnetDetails from '../components/KnetDetails'
+
+import Merchant from '../components/Merchant'
+import Socials from '../components/Socials'
 
 export default function Home() {
   return (
-    <div>
-      <h1 className="text-red-400">from index!</h1>
-    </div>
+    <>
+      <div className="md:w-2/3 w-full mx-auto">
+        <Merchant />
+        <KnetDetails />
+        <ConfirmBtns />
+        <Socials />
+      </div>
+    </>
   )
 }
